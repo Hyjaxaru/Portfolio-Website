@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Doppio+One&family=Poppins');
+
+/* All */
+
+:root {
+    --text: #e6e7fe;
+    --text-secondary: #bbbbbb;
+    --background: #101215;
+    --surface: #20242a;
+    --primary: #7afb7d;
+    --secondary: #048d98;
+    --accent: #108ff8;
+
+    --linearPrimarySecondary: linear-gradient(var(--primary), var(--secondary));
+    --linearPrimaryAccent: linear-gradient(var(--primary), var(--accent));
+    --linearSecondaryAccent: linear-gradient(var(--secondary), var(--accent));
+    --radialPrimarySecondary: radial-gradient(var(--primary), var(--secondary));
+    --radialPrimaryAccent: radial-gradient(var(--primary), var(--accent));
+    --radialSecondaryAccent: radial-gradient(var(--secondary), var(--accent));
+
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    font-family: 'Doppio One', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Navbar */
+
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to bottom, var(--background) 0%, transparent 100%);
+    align-items:center;
+    color: var(--text);
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    user-select: none;
+    z-index: 100;
+}
+
+nav ul {list-style-type: none; margin-right: 25px}
+nav ul li {display: inline; margin-left: 10px}
+nav ul li > * {color: var(--text); text-decoration: none; transition: color 0.2s;}
+nav ul li a:hover {color: var(--accent);}
+
+.nav-logo {margin: 0 0 0 25px; display: inline-block; width: 75px;}
+
+/* Defaults */
+
+.highlight-primary {color: var(--primary);}
+.highlight-accent {color: var(--accent);}
+
+.section-header {
+    display: inline;
+    margin-bottom: 10px;
+    padding: 5px 10px 5px 10px ;
+    background-color: var(--background);
+    border-radius: 10px;
+}
