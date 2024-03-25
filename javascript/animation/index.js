@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     //* Scroll Effects
     // summary section
-    gsap.from(".guarantee", { scrollTrigger: ".guarantee", duration: 1, x: -100, opacity: 0, ease: "power4.inOut" });
+    gsap.from(".guarantee", { scrollTrigger: ".guarantee", duration: 1, y: 100, opacity: 0, ease: "power4.inOut" });
 
     // about section
     gsap.from(".about", { scrollTrigger: ".about img", duration: 1, y: 100, opacity: 0, ease: "power4.inOut" })
