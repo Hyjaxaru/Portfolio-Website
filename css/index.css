@@ -10,11 +10,13 @@
 
 .title h1 {
     font-size: 72px;
+    white-space: nowrap;
     margin-bottom: 0px;
 }
 
 .title h2 {
     font-size: 36px;
+    white-space: nowrap;
 }
 
 .title img {
