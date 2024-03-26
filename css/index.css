@@ -1,11 +1,12 @@
 /** Title */
 
 .title{
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: 640px;
 }
 
 .title h1 {
@@ -20,7 +21,7 @@
 }
 
 .title img {
-    width: 300px;
+    width: 250px;
     border-style: solid;
     border-width: 10px;
     border-image-source: var(--linearPrimaryAccent);
@@ -30,7 +31,8 @@
 /** Guarantee Section */
 
 .guarantee {
-    margin-top: 50px;
+    /* margin-top: 50px;*/
+    width: auto;
     padding: 50px;
     display: flex;
     flex-wrap: nowrap;
@@ -105,6 +107,7 @@
 /** About */
 
 .about {
+    width: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -139,7 +142,6 @@
 /** Media */
 
 @media screen and (max-width: 1100px) {
-    .title {height: 640px;}
     .title img {width: 200px;}
     .title h1 {font-size: 60px;}
     .title .header-name {font-size: 60px;}
