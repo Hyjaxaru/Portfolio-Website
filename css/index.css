@@ -1,4 +1,4 @@
-/** Title */
+/** Title **/
 
 .title{
     width: auto;
@@ -28,7 +28,7 @@
     border-image-slice: 1;
 }
 
-/** Guarantee Section */
+/** Guarantee Section **/
 
 .guarantee {
     /* margin-top: 50px;*/
@@ -104,6 +104,60 @@
     color: var(--accent);
 }
 
+/** About **/
+
+.about {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    padding: 0 50px;
+}
+
+.about img {
+    width: 280px;
+}
+
+.about .info h3 {
+    color: var(--text-primary);
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .info p {
+    display: block;
+    color: var(--text-secondary);
+    font-family: Poppins;
+    font-size: 14px;
+}
+
+/** Skills **/
+
+.skills {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    padding: 0 50px;
+}
+
+.skills .info h3 {
+    color: var(--text-primary);
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skills .info p {
+    display: block;
+    color: var(--text-secondary);
+    font-family: Poppins;
+    font-size: 14px;
+}
+
 /** Media */
 
 @media screen and (max-width: 1100px) {
@@ -121,7 +175,21 @@
     }
 }
 
-@media screen and (max-width: 780px) {}
+@media screen and (max-width: 780px) {
+    .about {
+        width: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .skills {
+        width: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0;
+    }
+}
 
 @media screen and (max-width: 650px) {
     .title h1 {font-size: 42px;}
@@ -130,18 +198,14 @@
 }
 
 @media screen and (max-width: 480px) {
+    nav {display: none} /*TODO Mobile Nav*/
+    
     .title h1 {font-size: 36px;}
     .title .header-name {font-size: 36px;}
     .title h2 {font-size: 16px;}
-
-    nav {display: none} /*TODO Mobile Nav*/
     
-    .guarantee .item .info h3 {
-        font-size: 20px;
-    }
-    .guarantee .item .info p {
-        font-size: 12px;
-    }
+    .guarantee .item .info h3 {font-size: 20px;}
+    .guarantee .item .info p {font-size: 12px;}
 }
 
 /* ----- */
