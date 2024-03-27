@@ -19,7 +19,6 @@
     --radialSecondaryAccent: radial-gradient(var(--secondary), var(--accent));
 
     scroll-behavior: smooth;
-
 }
 
 body {
@@ -29,6 +28,16 @@ body {
     padding: 0;
     font-family: 'Doppio One', sans-serif;
     transition: background-color 0.3s, color 0.3s;
+}
+
+#bottom-fade {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to top, var(--background) 0%, transparent 100%);
+
+
 }
 
 /* Navbar */
@@ -67,4 +76,47 @@ nav ul li a:hover {color: var(--accent);}
     padding: 5px 10px 5px 10px ;
     background-color: var(--background);
     border-radius: 10px;
+}
+
+/* Split Content */
+
+.split-content {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    padding: 0 50px;
+
+
+}
+
+.split-content img {
+    width: 280px;
+}
+
+.split-content .info h3 {
+    color: var(--text-primary);
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.split-content .info p {
+    display: block;
+    color: var(--text-secondary);
+    font-family: Poppins;
+    font-size: 14px;
+}
+
+.split-content .info button {
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 780px) {
+    .split-content {
+        width: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }

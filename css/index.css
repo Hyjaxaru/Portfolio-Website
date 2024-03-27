@@ -104,41 +104,6 @@
     color: var(--accent);
 }
 
-/** About */
-
-.about {
-    width: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 80px;
-    padding: 0 50px;
-
-
-}
-
-.about img {
-    width: 280px;
-}
-
-.about .info h3 {
-    color: var(--text-primary);
-    font-size: 32px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.about .info p {
-    display: block;
-    color: var(--text-secondary);
-    font-family: Poppins;
-    font-size: 14px;
-}
-
-.about .info button {
-    margin-top: 30px;
-}
-
 /** Media */
 
 @media screen and (max-width: 1100px) {
@@ -156,16 +121,12 @@
     }
 }
 
-@media screen and (max-width: 780px) {
-    .about {
-        width: auto;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
+@media screen and (max-width: 780px) {}
 
 @media screen and (max-width: 650px) {
-
+    .title h1 {font-size: 42px;}
+    .title .header-name {font-size: 42px;}
+    .title h2 {font-size: 24px;}
 }
 
 @media screen and (max-width: 480px) {
